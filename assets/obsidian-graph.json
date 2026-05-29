@@ -1,0 +1,13 @@
+{
+  "showTags": true,
+  "showAttachments": false,
+  "showOrphans": true,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    { "query": "path:Terms",    "color": { "a": 1, "rgb": 5431378 } },
+    { "query": "path:Formulas", "color": { "a": 1, "rgb": 14079702 } },
+    { "query": "path:Lectures", "color": { "a": 1, "rgb": 3120273 } },
+    { "query": "path:Indexes",  "color": { "a": 1, "rgb": 11621088 } }
+  ],
+  "scale": 1
+}
