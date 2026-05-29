@@ -133,13 +133,14 @@ L4 (MLP & Backpropagation) — "Skip connections"
 The `[[double-bracket links]]` connect it to every related term; hover any link
 for a preview; the `## Review` card drops straight into spaced-repetition.
 
-**Animations** — each is a real GIF generated for that concept (skip connection
-gradient flow · Inception parallel branches · softmax sharpening):
+**Animations** — each is a real GIF generated for that concept (max-pooling window
+sliding to its max · ImageNet error falling as nets deepen · a U-Net's encoder /
+decoder with skip connections):
 
 <p>
-  <img src="images/sample-skip-connection.gif" width="32%" alt="Skip connection animation" />
-  <img src="images/sample-inception.gif" width="32%" alt="Inception module animation" />
-  <img src="images/sample-softmax.gif" width="32%" alt="Softmax animation" />
+  <img src="images/sample-max-pooling.gif" width="32%" alt="Max pooling animation" />
+  <img src="images/sample-ilsvrc.gif" width="32%" alt="ImageNet error-over-time animation" />
+  <img src="images/sample-unet.gif" width="32%" alt="U-Net architecture animation" />
 </p>
 
 ---
