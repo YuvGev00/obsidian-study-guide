@@ -73,9 +73,15 @@ across psychology, economics, sports, medicine, and law.
 
 ## 👀 Sample output
 
-A real term note the skill generated (from a deep-learning course). Every term
-note follows this shape: definition → plain-words callout with an analogy → why
-it matters → transcluded formulas → a visual (animation + diagram) → links → source.
+A generated term note open in Obsidian's reading mode — rendered LaTeX, a tidy
+properties panel, the "in simple words" callout, and the whole interlinked vault
+in the sidebar:
+
+![A generated note in Obsidian reading mode](images/screenshot-note.png)
+
+And here's the Markdown behind it. Every term note follows this shape: definition
+→ plain-words callout with an analogy → why it matters → transcluded formulas → a
+visual (animation + diagram) → links → source.
 
 ````markdown
 ---
