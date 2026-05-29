@@ -9,6 +9,11 @@ notebooks and it builds a complete second brain for the course — atomic notes,
 teaching walkthroughs, visuals, animations, and exam-ready flashcards — all
 cross-linked and verified.
 
+![Obsidian graph view of a generated vault](images/graph-view.png)
+
+> *Graph view of a real generated vault — 378 notes, ~1,900 links. Blue = terms,
+> green = formulas, orange = lectures, pink hub = the Home map-of-content.*
+
 ---
 
 ## ✨ Install (one line)
@@ -127,6 +132,15 @@ L4 (MLP & Backpropagation) — "Skip connections"
 
 The `[[double-bracket links]]` connect it to every related term; hover any link
 for a preview; the `## Review` card drops straight into spaced-repetition.
+
+**Animations** — each is a real GIF generated for that concept (skip connection
+gradient flow · Inception parallel branches · softmax sharpening):
+
+<p>
+  <img src="images/sample-skip-connection.gif" width="32%" alt="Skip connection animation" />
+  <img src="images/sample-inception.gif" width="32%" alt="Inception module animation" />
+  <img src="images/sample-softmax.gif" width="32%" alt="Softmax animation" />
+</p>
 
 ---
 
