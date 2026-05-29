@@ -66,6 +66,89 @@ across psychology, economics, sports, medicine, and law.
 
 ---
 
+## 👀 Sample output
+
+A real term note the skill generated (from a deep-learning course). Every term
+note follows this shape: definition → plain-words callout with an analogy → why
+it matters → transcluded formulas → a visual (animation + diagram) → links → source.
+
+````markdown
+---
+type: term
+lecture: [L4, L7]
+tags: [term, mlp]
+aliases: [Residual Connection]
+---
+# Skip Connection
+
+## Formal definition
+A connection where an earlier value is added directly to a later one, e.g.
+$\mathbf{y}=W_2\mathbf{h}+\mathbf{b}_2+\mathbf{z}$.
+
+## In simple words
+> [!tip] In simple words
+> A shortcut that lets a value bypass some layers and rejoin later. Because the
+> value now has two routes to the loss, its gradient is the sum of both.
+>
+> **Analogy:** a bypass road plus the main road both reaching the same town —
+> total traffic effect is the sum of both routes.
+
+## Why we need it
+It gives gradients a short "bypass path" that mitigates vanishing gradients in
+deep networks.
+
+## Formulas
+![[f- Multivariate Chain Rule]]
+
+## Visual
+**Animated:** the gradient also flows the short way back via the skip path.
+
+![[anim_skip_connection.gif]]
+
+```mermaid
+graph LR
+  x["x"] --> F["F(x) (layers)"]
+  x -->|"skip"| add(("+"))
+  F --> add
+  add --> y["y = F(x) + x"]
+```
+
+## Review
+<!-- #flashcards/deep-learning/L4 -->
+What is a **skip connection**?::An additive shortcut so a value reaches a later
+layer directly, giving gradients a bypass path.
+
+## Related
+[[Residual]] · [[Vanishing Gradients]] · [[ResNet]] · [[Multivariate Chain Rule]]
+
+## Source
+L4 (MLP & Backpropagation) — "Skip connections"
+````
+
+The `[[double-bracket links]]` connect it to every related term; hover any link
+for a preview; the `## Review` card drops straight into spaced-repetition.
+
+---
+
+## 🛠️ What the build looks like
+
+1. You point the skill at a folder of lecture material.
+2. It enters **plan mode** and asks ~4–8 quick questions, each with a recommended
+   one-click default:
+   - *Coverage* — full course / match a study guide / guide + key foundations
+   - *Animations* — full / selective / none / do it after the vault is built
+   - *Flashcards* — on (exam-ready) / off (reading-only)
+   - *Build cadence* — all at once / in batches / one lecture at a time
+   - *Audience* — exam-prep / long-term reference / teaching
+   - *Vault name* — confirms a name derived from your folder
+3. It builds **one sample lecture** and shows it to you for sign-off.
+4. After approval, it produces the rest at your chosen cadence, runs `verify.py`,
+   and reports a clean vault (0 broken links).
+
+You stay in control the whole way — nothing big happens without your go-ahead.
+
+---
+
 ## 🧠 How it's built to be good (and cheap)
 
 - **Asks before it builds.** A fresh build runs in plan mode and puts the real
@@ -85,6 +168,7 @@ across psychology, economics, sports, medicine, and law.
 
 ```
 obsidian-study-guide/
+├── README.md · LICENSE · CHANGELOG.md
 ├── .claude-plugin/
 │   ├── plugin.json          # plugin manifest
 │   └── marketplace.json     # makes this repo its own marketplace
