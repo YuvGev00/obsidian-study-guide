@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "obsidian-study-guide",
+  "version": "1.0.0",
+  "description": "Turn course material (lecture PDFs/PPTX, study guides, notebooks) into a deeply interlinked Obsidian study vault: atomic term/formula notes, teaching-walkthrough lectures, MOC indexes, visuals, per-concept animated GIFs, and spaced-repetition flashcards.",
+  "author": { "name": "Yuval Geva" },
+  "homepage": "https://github.com/YuvGev00/obsidian-study-guide",
+  "repository": "https://github.com/YuvGev00/obsidian-study-guide",
+  "license": "MIT",
+  "keywords": ["obsidian", "study-notes", "spaced-repetition", "flashcards", "lecture-notes", "knowledge-base", "education"]
+}

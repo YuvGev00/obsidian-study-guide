@@ -1,0 +1,14 @@
+{
+  "name": "obsidian-study-guide",
+  "owner": { "name": "Yuval Geva" },
+  "metadata": {
+    "description": "A skill that turns course material into a deeply interlinked Obsidian study vault."
+  },
+  "plugins": [
+    {
+      "name": "obsidian-study-guide",
+      "source": "./",
+      "description": "Turn course material into a deeply interlinked Obsidian study vault — atomic term/formula notes, teaching-walkthrough lectures, visuals, per-concept animated GIFs, and spaced-repetition flashcards."
+    }
+  ]
+}
